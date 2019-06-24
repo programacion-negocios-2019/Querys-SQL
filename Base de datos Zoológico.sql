@@ -64,3 +64,58 @@ ALTER TABLE Zoo.AnimalZoologico
 		ON UPDATE CASCADE
 		ON DELETE NO ACTION
 GO
+
+-- Insertar en las tablas
+INSERT INTO Zoo.Zoologico (ciudad)
+VALUES	('Yojoa'),
+		('New York'),
+		('Tokyo'),
+		('Paris'),
+		('Madrid'),
+		('Zambrano')
+GO
+
+INSERT INTO Zoo.Animal (nombre)
+VALUES	('Águila'),
+		('Venado Cola Blanca'),
+		('Cocodrilo'),
+		('Jirafa'),
+		('León'),
+		('Mono'),
+		('Tigre'),
+		('Elefante'),
+		('Zebra'),
+		('Hipopótamo'),
+		('Pinguinos'),
+		('Lémur')
+GO
+
+INSERT INTO Zoo.AnimalZoologico (idZoologico, idAnimal)
+VALUES	(1, 1),
+		(1, 3),
+		(1, 5),
+		(2, 2),
+		(2, 4),
+		(2, 6),
+		(3, 7),
+		(3, 8),
+		(3, 9),
+		(4, 10),
+		(4, 11),
+		(4, 12),
+		(5, 4),
+		(5, 8),
+		(5, 11),
+		(6, 1),
+		(6, 2),
+		(6, 3),
+		(6, 4),
+		(6, 5),
+		(6, 6),
+		(6, 7),
+		(6, 8),
+		(6, 9),
+		(6, 10),
+		(6, 11),
+		(6, 12)
+GO
