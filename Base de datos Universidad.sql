@@ -53,6 +53,12 @@ CREATE TABLE Universidad.ClaseEstudiante (
 )
 GO
 
+-- Agregar llave primaria a la tabla ClaseEstudiante
+ALTER TABLE Universidad.ClaseEstudiante
+	ADD CONSTRAINT PK_Universidad_ClaseEstudiante_id
+		PRIMARY KEY CLUSTERED (id)
+GO
+
 -- Llaves foráneas
 ALTER TABLE Universidad.Estudiante
 	ADD CONSTRAINT FK_Universidad_Estudiante$Pertenece$Universidad_Universidad
